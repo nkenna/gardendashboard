@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.generalsteinacoz.gardendashboard.MainActivity">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="14dp"
+            android:id="@+id/linearlayout1" android:weightSum="1" android:layout_width="280dp">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:id="@+id/linearlayout2" android:layout_height="wrap_content">
+            <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <Button
+                            android:text="Connect"
+                            android:layout_width="match_parent"
+                            android:id="@+id/connect_btn"
+                            android:textStyle="normal|italic" android:textSize="10sp" android:layout_height="30dp"/>
+                    <TextView
+                            android:text="####"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/connect_txtView"
+                            android:fontFamily="cursive" android:textAlignment="viewStart"/>
+                </TableRow>
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                            android:text="Amb. Temperature"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textView18"/>
+                    <TextView
+                            android:text="####"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/a_temp_txtView"/>
+                </TableRow>
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                            android:text="Humdity (%)"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textView22"/>
+                    <TextView
+                            android:text="####"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/humdity_txtView"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:orientation="horizontal">
+                    <TextView
+                            android:text="Soil Moisture(%)"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textView11"/>
+                    <TextView
+                            android:text="####"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/s_moisture_txtView"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView
+                            android:text="Soil Temperature"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textView13"/>
+                    <TextView
+                            android:text="####"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/s_temp_txtView"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView
+                            android:text="Status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textView15"/>
+                    <TextView
+                            android:text="####"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/status_txtView"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView
+                            android:text="Activity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textView17"/>
+                    <TextView
+                            android:text="#####"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/activity_txtView"
+                            android:textColor="@color/colorAccent"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/relativelayout2"
+                android:layout_height="140dp"
+
+                android:layout_alignParentTop="true"
+
+
+                android:layout_weight="0.78">
+
+            <Button
+                    android:id="@+id/btn_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="LEFT" android:layout_row="0" android:layout_column="0"
+                    android:layout_centerVertical="true"
+            />
+            <Button
+                    android:id="@+id/btn_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="DOWN" android:layout_row="0" android:layout_column="0"
+                    android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+            <Button
+                    android:id="@+id/btn_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="UP" android:layout_row="0" android:layout_column="0"
+                    android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+            <Button
+                    android:id="@+id/btn_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="RIGHT" android:layout_row="0" android:layout_column="0"
+                    android:layout_alignBaseline="@+id/btn_left" android:layout_alignBottom="@+id/btn_left"
+                    android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_alignBottom="@+id/linearlayout1"
+            android:id="@+id/relativelayout3" android:layout_width="250dp">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+                android:id="@+id/linearlayout4" android:layout_height="wrap_content">
+            <Button
+                    android:text="Camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/btn_start_camera" android:layout_weight="1"
+                    android:textSize="14sp"/>
+            <Button
+                    android:text="####"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/btn_" android:layout_weight="1"
+                    android:textSize="14sp"/>
+            <Button
+                    android:text="#####"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/btn_t" android:layout_weight="1"
+                    android:textSize="14sp"/>
+        </LinearLayout>
+        <VideoView
+                android:layout_width="wrap_content"
+                android:id="@+id/videoView" android:layout_row="12"
+                android:layout_column="0" android:layout_height="165dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:id="@+id/linearlayout3"
+                android:layout_above="@+id/linearlayout4" android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" android:layout_height="50dp">
+            <Switch
+                    android:text="Arm"
+                    android:layout_height="wrap_content" android:id="@+id/switch_arm" android:layout_weight="1"
+                    android:layout_width="140dp"/>
+            <Switch
+                    android:text="Water"
+                    android:layout_height="wrap_content" android:id="@+id/switch_water" android:layout_weight="1"
+                    android:layout_width="140dp"/>
+            <Switch
+                    android:text="Torch"
+                    android:layout_height="wrap_content" android:id="@+id/switch_torch" android:layout_weight="1"
+                    android:layout_width="140dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
